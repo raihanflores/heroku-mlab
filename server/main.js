@@ -1,7 +1,11 @@
-import { Meteor } from 'meteor/meteor';
-import Mongo from 'meteor/mongo';
+import {
+  Meteor
+} from 'meteor/meteor';
+import {
+  Mongo
+} from 'meteor/mongo';
 
-const Users = new Mongo.Colelction('users');
+const Users = new Mongo.Collection('users');
 
 Meteor.methods({
   'getUsers': () => {
